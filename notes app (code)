@@ -21,8 +21,6 @@ def clear_notes():
 def change_textfont(text):
     font=input("Pick a font: 1.Bold   2.Cursive")
 
-    font=input("Pick a font: 1.Bold   2.Cursive")
-
     fancy = "𝓪𝓫𝓬𝓭𝓮𝓯𝓰𝓱𝓲𝓳𝓴𝓵𝓶𝓷𝓸𝓹𝓺𝓻𝓼𝓽𝓾𝓿𝔀𝔁𝔂𝔃!"
     bold="𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇"
     normal = "abcdefghijklmnopqrstuvwxyz"
@@ -41,7 +39,9 @@ def change_textfont(text):
             elif font=="":
                 print("You have exited font selection")
             else:
-                result+=char
+                result += char
+        else:
+            result +=char
 
     return result
 
